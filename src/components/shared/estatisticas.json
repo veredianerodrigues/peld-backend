@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_estatisticas",
+  "info": {
+    "displayName": "Estatísticas",
+    "icon": "chart-bar"
+  },
+  "options": {},
+  "attributes": {
+    "professores": { "type": "integer", "default": 0 },
+    "doutores": { "type": "integer", "default": 0 },
+    "mestres": { "type": "integer", "default": 0 },
+    "alunos": { "type": "integer", "default": 0 }
+  }
+}

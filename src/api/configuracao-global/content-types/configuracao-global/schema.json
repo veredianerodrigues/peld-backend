@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "configuracao_globals",
+  "info": {
+    "singularName": "configuracao-global",
+    "pluralName": "configuracao-globals",
+    "displayName": "Configuração Global",
+    "description": "Header/footer compartilhado em todas as páginas"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "texto_footer": { "type": "text", "required": true },
+    "footer_localidade": { "type": "text" },
+    "footer_email": { "type": "email" }
+  }
+}

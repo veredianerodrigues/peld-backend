@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eixos",
+  "info": {
+    "singularName": "eixo",
+    "pluralName": "eixos",
+    "displayName": "Eixo de Atuação"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "nome": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "nome" },
+    "descricao_curta": { "type": "text", "required": true },
+    "descricao_completa": { "type": "richtext" },
+    "objetivos": { "type": "richtext" },
+    "metas": { "type": "richtext" },
+    "icone": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "icone_venn": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "cor": { "type": "string" },
+    "ordem": { "type": "integer", "default": 0 }
+  }
+}

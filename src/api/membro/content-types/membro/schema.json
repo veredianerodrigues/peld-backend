@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "membros",
+  "info": {
+    "singularName": "membro",
+    "pluralName": "membros",
+    "displayName": "Membro da Equipe"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "nome": { "type": "string", "required": true },
+    "cargo": { "type": "string" },
+    "instituicao_vinculo": { "type": "string" },
+    "foto": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "categoria": {
+      "type": "enumeration",
+      "enum": ["coordenacao", "ponto_focal"],
+      "required": true
+    },
+    "ordem": { "type": "integer", "default": 0 }
+  }
+}

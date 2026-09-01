@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "sobre_pages",
+  "info": {
+    "singularName": "sobre-page",
+    "pluralName": "sobre-pages",
+    "displayName": "Sobre Page"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "o_que_e_peld": { "type": "richtext" },
+    "parque_nacional": { "type": "richtext" },
+    "historia_projeto": { "type": "richtext" },
+    "elementos_marca": {
+      "type": "component",
+      "component": "shared.elemento-marca",
+      "repeatable": true
+    },
+    "estatisticas": {
+      "type": "component",
+      "component": "shared.estatisticas",
+      "repeatable": false
+    }
+  }
+}

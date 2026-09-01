@@ -1,0 +1,15 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Conteúdo do hero da Home"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "slogan": { "type": "string", "required": true },
+    "imagem_fundo": { "type": "media", "multiple": false, "allowedTypes": ["images"], "required": true }
+  }
+}

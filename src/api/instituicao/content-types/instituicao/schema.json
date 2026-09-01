@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instituicoes",
+  "info": {
+    "singularName": "instituicao",
+    "pluralName": "instituicoes",
+    "displayName": "Instituição"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "nome": { "type": "string", "required": true },
+    "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "link": { "type": "string" },
+    "descricao": { "type": "text" },
+    "ordem": { "type": "integer", "default": 0 }
+  }
+}

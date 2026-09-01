@@ -1,0 +1,13 @@
+{
+  "kind": "singleType",
+  "collectionName": "contato_pages",
+  "info": {
+    "singularName": "contato-page",
+    "pluralName": "contato-pages",
+    "displayName": "Contato Page"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "introducao": { "type": "text" }
+  }
+}

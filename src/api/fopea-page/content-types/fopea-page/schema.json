@@ -1,0 +1,16 @@
+{
+  "kind": "singleType",
+  "collectionName": "fopea_pages",
+  "info": {
+    "singularName": "fopea-page",
+    "pluralName": "fopea-pages",
+    "displayName": "FOPEA Page"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "introducao": { "type": "richtext" },
+    "corpo": { "type": "blocks" },
+    "galeria": { "type": "media", "multiple": true, "allowedTypes": ["images"] },
+    "link_youtube": { "type": "string" }
+  }
+}

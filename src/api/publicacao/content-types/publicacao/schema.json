@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publicacoes",
+  "info": {
+    "singularName": "publicacao",
+    "pluralName": "publicacoes",
+    "displayName": "Publicação"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "titulo": { "type": "string", "required": true },
+    "autores": { "type": "string" },
+    "ano": { "type": "integer" },
+    "arquivo": { "type": "media", "multiple": false, "allowedTypes": ["files"] },
+    "resumo": { "type": "text" },
+    "eixo": { "type": "relation", "relation": "manyToOne", "target": "api::eixo.eixo" }
+  }
+}

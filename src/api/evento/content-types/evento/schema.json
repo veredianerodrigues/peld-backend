@@ -1,0 +1,16 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventos",
+  "info": {
+    "singularName": "evento",
+    "pluralName": "eventos",
+    "displayName": "Evento"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "titulo": { "type": "string", "required": true },
+    "data": { "type": "date", "required": true },
+    "descricao": { "type": "text" },
+    "local": { "type": "string" }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_elemento_marcas",
+  "info": {
+    "displayName": "Elemento da Marca",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": { "type": "string", "required": true },
+    "icone": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "descricao": { "type": "text" }
+  }
+}
