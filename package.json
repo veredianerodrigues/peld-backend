@@ -5,6 +5,7 @@
   "description": "PELD Iguaçu - CMS (Strapi)",
   "scripts": {
     "build": "strapi build",
+    "postinstall": "node scripts/postinstall.js",
     "console": "strapi console",
     "deploy": "strapi deploy",
     "dev": "strapi develop",
