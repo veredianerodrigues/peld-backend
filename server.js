@@ -1,18 +1,18 @@
 const fs = require('fs');
 const path = require('path');
-const { execFileSync } = require('child_process');
 const { createStrapi } = require('@strapi/strapi');
 
 const distDir = path.join(__dirname, 'dist');
 
-// A Hostinger nem sempre roda `npm run build` no deploy. Sem o build, o
-// Strapi não sobe (503). Se o admin ainda não foi buildado, builda aqui.
-// Usa o próprio node (process.execPath) porque o `npx` pode não estar no
-// PATH do processo em produção.
+// O build (`npm run build`) roda no passo de build do deploy da Hostinger
+// (hPanel → Node.js → comando de build). Não buildamos aqui no start: dentro do
+// processo do app o esbuild é derrubado pelo limite de processos/memória
+// (EAGAIN/EPIPE) e o app entra em loop de reinício tentando buildar.
 if (!fs.existsSync(path.join(distDir, 'build', 'index.html'))) {
-  console.log('dist/build não encontrado, rodando strapi build...');
-  const strapiBin = path.join(__dirname, 'node_modules', '@strapi', 'strapi', 'bin', 'strapi.js');
-  execFileSync(process.execPath, [strapiBin, 'build'], { cwd: __dirname, stdio: 'inherit' });
+  console.error(
+    'dist/build não encontrado. Configure o comando de build `npm run build` no hPanel e publique de novo.',
+  );
+  process.exit(1);
 }
 
 createStrapi({
