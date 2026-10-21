@@ -8,11 +8,13 @@ import logoLogin from './extensions/logo-login.png';
 import logoMenu from './extensions/logo-menu.png';
 import favicon from './extensions/favicon.ico';
 
-// Defaults de tema e locale: StrapiApp.render() lê STRAPI_THEME e strapi-admin-language
-// do localStorage na criação do store, então o seed roda no import do módulo.
+const LOCALE = 'pt-BR';
+
+// StrapiApp.render() lê STRAPI_THEME e strapi-admin-language do localStorage na criação
+// do store, então o seed roda no import do módulo. Tema: só default; locale: forçado.
 try {
   if (!localStorage.getItem('STRAPI_THEME')) localStorage.setItem('STRAPI_THEME', 'light');
-  if (!localStorage.getItem('strapi-admin-language')) localStorage.setItem('strapi-admin-language', 'pt-BR');
+  localStorage.setItem('strapi-admin-language', LOCALE);
 } catch {
   // localStorage indisponível: mantém os defaults do Strapi
 }
@@ -115,6 +117,14 @@ export default {
     },
     tutorials: false,
     notifications: { releases: false },
+  },
+  register(app: StrapiApp) {
+    // 'en' é sempre incluído em configurations.locales e o login despacha setLocale com
+    // user.preferedLanguage; o middleware reescreve qualquer admin/setLocale para pt-BR.
+    app.addMiddlewares([
+      () => () => (next: (action: any) => any) => (action: any) =>
+        next(action?.type === 'admin/setLocale' ? { ...action, payload: LOCALE } : action),
+    ]);
   },
   bootstrap(app: StrapiApp) {
     const style = document.createElement('style');
