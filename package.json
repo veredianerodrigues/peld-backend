@@ -16,6 +16,7 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
+    "@fontsource/source-sans-3": "^5.2.8",
     "@strapi/plugin-cloud": "^5.58.0",
     "@strapi/plugin-users-permissions": "^5.58.0",
     "@strapi/strapi": "^5.58.0",
