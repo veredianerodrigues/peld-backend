@@ -53,5 +53,18 @@ export default {
     tutorials: false,
     notifications: { releases: false },
   },
-  bootstrap(app: StrapiApp) {},
+  bootstrap(app: StrapiApp) {
+    // O Strapi fixa o título da aba como "Página | Strapi" (e "Strapi Admin" antes de carregar),
+    // sem opção de configuração. Trocamos o nome sempre que o título muda.
+    const renameTitle = () => {
+      const renamed = document.title.replace(/\| Strapi$/, '| PELD').replace(/^Strapi Admin$/, 'PELD');
+      if (renamed !== document.title) document.title = renamed;
+    };
+    renameTitle();
+    new MutationObserver(renameTitle).observe(document.head, {
+      childList: true,
+      subtree: true,
+      characterData: true,
+    });
+  },
 };
