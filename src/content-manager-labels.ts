@@ -34,9 +34,9 @@ const BY_UID: Record<string, Record<string, FieldLabel>> = {
   'api::contato-page.contato-page': {},
   'api::eixo.eixo': {
     descricao_curta: 'Descrição curta',
-    descricao_completa: 'Descrição completa',
-    objetivos: 'Objetivos',
-    metas: 'Metas',
+    descricao_completa: { label: 'Objetivo geral', description: 'Texto do objetivo geral do eixo.' },
+    objetivos: { label: 'Objetivos específicos', description: 'Um por linha, começando com "- ". Ex.: - **1.1** Inventariar...' },
+    metas: { label: 'Metas', description: 'Opcional. Se vazio, a seção não aparece no site.' },
     icone_venn: 'Ícone do diagrama de Venn',
     cor: { label: 'Cor', description: 'Hexadecimal, ex.: #1A9E96.' },
   },
@@ -62,10 +62,17 @@ const BY_UID: Record<string, Record<string, FieldLabel>> = {
     categoria: 'Categoria',
   },
   'api::noticia.noticia': {
+    slug: { label: 'Slug (endereço)', description: 'Endereço da notícia no site. Use o botão de gerar a partir do título.' },
+    resumo: { label: 'Linha fina', description: 'Frase abaixo do título; também aparece na lista de notícias.' },
     corpo: 'Texto da notícia',
+    fontes: { label: 'Fontes', description: 'Matéria original: nome do veículo e título, e o link.' },
     destaque: { label: 'Destaque', description: 'Exibe na página inicial (máximo de 3).' },
   },
-  'api::pesquisa-page.pesquisa-page': {},
+  'api::pesquisa-page.pesquisa-page': {
+    diagrama: { label: 'Diagrama dos eixos', description: 'Imagem do diagrama de Venn com os objetivos.' },
+    diagrama_legenda: 'Legenda do diagrama',
+    infraestrutura: { label: 'Infraestrutura de pesquisa', description: 'Uma seção para cada item, ex.: Módulos RAPELD.' },
+  },
   'api::publicacoes-page.publicacoes-page': {
     ebook_titulo: { label: 'E-book: título', description: 'Destaque no topo da página. Deixe vazio para ocultar.' },
     ebook_descricao: 'E-book: descrição',
@@ -92,6 +99,14 @@ const BY_UID: Record<string, Record<string, FieldLabel>> = {
     estatisticas: 'Estatísticas da equipe',
   },
   'shared.elemento-marca': {},
+  'shared.link': {
+    titulo: 'Texto',
+    url: { label: 'Link', description: 'Endereço completo, começando com https://' },
+  },
+  'shared.secao-texto': {
+    texto: 'Texto',
+    legenda: 'Legenda da imagem',
+  },
   'shared.estatisticas': {
     professores: 'Professores',
     doutores: 'Doutores',

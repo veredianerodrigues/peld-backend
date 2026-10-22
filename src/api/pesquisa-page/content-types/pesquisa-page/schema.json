@@ -8,6 +8,9 @@
   },
   "options": { "draftAndPublish": true },
   "attributes": {
-    "introducao": { "type": "richtext" }
+    "introducao": { "type": "richtext" },
+    "diagrama": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "diagrama_legenda": { "type": "string" },
+    "infraestrutura": { "type": "component", "repeatable": true, "component": "shared.secao-texto" }
   }
 }

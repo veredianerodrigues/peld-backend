@@ -1,0 +1,217 @@
+{
+  "pagina": {
+    "introducao": "Confira as publicações e produções científicas desenvolvidas no âmbito do PELD Iguaçu, reunindo resultados de pesquisas sobre biodiversidade, conservação e ecologia.",
+    "ebook_titulo": "Monitoramento ambiental integrado e potencialidades do maior remanescente de Mata Atlântica de interior do Brasil: Parque Nacional do Iguaçu",
+    "ebook_descricao": "Publicação produzida no âmbito do PELD Iguaçu, reunindo conhecimentos e resultados relacionados à biodiversidade e à conservação do Parque Nacional do Iguaçu."
+  },
+  "publicacoes": [
+    {
+      "titulo": "Spatial distribution, habitat suitability, and threat status of *Diponthus crassus* (Orthoptera: Romaleidae: Romaleini)",
+      "tipo": "artigo_cientifico",
+      "periodico": "Journal of Insect Conservation",
+      "ano": 2026,
+      "link": "https://doi.org/10.1007/s10841-026-00790-z"
+    },
+    {
+      "titulo": "Legalizing Invasions: The Socio-Political Trap of Sport Fishing in the Brazil–Argentina–Paraguay Border Region",
+      "tipo": "artigo_cientifico",
+      "periodico": "Journal of International Wildlife Law & Policy",
+      "ano": 2026,
+      "link": "https://doi.org/10.1080/13880292.2026.2662703"
+    },
+    {
+      "titulo": "Protocolo para amostragem de mamíferos terrestres em áreas protegidas",
+      "tipo": "artigo_cientifico",
+      "ano": 2026
+    },
+    {
+      "titulo": "Agonistic behavior of the Neotropical cricket *Eidmanacris meridionalis* (Orthoptera: Phalangopsidae)",
+      "tipo": "artigo_cientifico",
+      "periodico": "Journal of Insect Behavior",
+      "ano": 2025,
+      "link": "https://doi.org/10.1007/s10905-025-09873-2"
+    },
+    {
+      "titulo": "LandFrag: A Dataset to Investigate the Effects of Forest Loss and Fragmentation on Biodiversity",
+      "tipo": "artigo_cientifico",
+      "periodico": "Global Ecology and Biogeography",
+      "ano": 2025,
+      "link": "https://doi.org/10.1111/geb.70015"
+    },
+    {
+      "titulo": "Mapping the status of global taxonomic knowledge of Orthoptera (Arthropoda, Insecta)",
+      "tipo": "artigo_cientifico",
+      "periodico": "Frontiers of Biogeography",
+      "ano": 2025,
+      "link": "https://doi.org/10.21425/fob.18.145455"
+    },
+    {
+      "titulo": "Two new *Anaulacomera* species (Orthoptera: Tettigoniidae: Phaneropterinae) and first female descriptions of *A. dama* and *A. sylviae* from protected areas in southern Brazil",
+      "tipo": "artigo_cientifico",
+      "periodico": "Zootaxa",
+      "ano": 2025,
+      "link": "https://doi.org/10.11646/zootaxa.5604.4.9"
+    },
+    {
+      "titulo": "Participação social na elaboração do Projeto Político Pedagógico mediado pela Educação Ambiental do Parque Nacional do Iguaçu",
+      "tipo": "artigo_cientifico",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2024,
+      "link": "https://doi.org/10.34024/revbea.2024.v19.19078"
+    },
+    {
+      "titulo": "Concepções ambientais de atores sociais residentes no entorno do Parque Nacional do Iguaçu",
+      "tipo": "artigo_cientifico",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2024,
+      "link": "https://doi.org/10.34024/revbea.2024.v19.16539"
+    },
+    {
+      "titulo": "Habitat and microhabitat use by *Crossodactylus schmidti* (Anura: Hylodidae) in Atlantic Rainforest streams",
+      "tipo": "artigo_cientifico",
+      "periodico": "Phyllomedusa: Journal of Herpetology",
+      "ano": 2024,
+      "link": "https://doi.org/10.11606/issn.2316-9079.v23i2p137-152"
+    },
+    {
+      "titulo": "First observations of foraging relationship between white-shouldered fire-eye *Pyriglena leucoptera* (Passeriformes) and Azara’s agouti *Dasyprocta azarae* (Rodentia)",
+      "tipo": "artigo_cientifico",
+      "periodico": "Ornithology Research",
+      "ano": 2024,
+      "link": "https://doi.org/10.1007/s43388-024-00168-2"
+    },
+    {
+      "titulo": "Economic risks of environmental setbacks in Brazil’s Iguaçu National Park",
+      "tipo": "artigo_cientifico",
+      "periodico": "Environmental Conservation",
+      "ano": 2024,
+      "link": "https://doi.org/10.1017/s0376892924000201"
+    },
+    {
+      "titulo": "Consumo de cogumelos por *Mazama rufa* (Illiger, 1815) na Mata Atlântica subtropical",
+      "tipo": "artigo_cientifico",
+      "periodico": "Notas sobre Mamíferos Sudamericanos",
+      "ano": 2024,
+      "link": "https://doi.org/10.31687/SaremNMS24.11.3"
+    },
+    {
+      "titulo": "Avaliação das espécies de fauna do Paraná",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Livro Vermelho da Fauna Ameaçada do Estado do Paraná",
+      "ano": 2025,
+      "link": "https://www.iat.pr.gov.br/sites/agua-terra/arquivos_restritos/files/documento/2025-06/livro_vermelho_fauna_parana_2025.pdf"
+    },
+    {
+      "titulo": "Visitação com fins educacionais no Parque Nacional do Iguaçu: potencial transformador da Trilha do Saltão, Capanema (PR)",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2025.v20.21239",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Educação Ambiental no Parque Nacional do Iguaçu: análise bibliométrica e mapeamento temático",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2025.v20.21517",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Educação Ambiental Crítica: perspectivas político-pedagógicas na luta contra a opressão",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2025.v20.21540",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Percepção dos visitantes em relação à aglomeração no Parque Nacional do Iguaçu (PR)",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2025.v20.21453",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Percepção ambiental de estudantes a respeito da vida selvagem no entorno do Parque Nacional do Iguaçu",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2025.v20.21492",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "As representações sociais de estudantes do ensino médio do Paraná sobre a dimensão científica da emergência climática",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2026.v21.21612",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Projeto Pinheiro do Paraná: semeando florestas e saberes",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2026.v21.21610",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Educação Ambiental nos Instrumentos de Gestão do Parque Nacional do Iguaçu",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2026.v21.21616",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Territórios em conexão: Educação Ambiental, complexidade e Unidades de Conservação frente à emergência climática",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2026.v21.21618",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Biomonitoramento e Educação Ambiental como estratégias integradas para conservação da Bacia do Rio Iguaçu",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2026.v21.21613",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "A naturalização dos efeitos antrópicos das Mudanças Climáticas Globais (MCG) na veiculação da notícia digital: o caso de uma oficina formativa no Sudoeste do Paraná",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2026.v21.21620",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Educação Ambiental Crítica e processos formativos no entorno do Parque Nacional do Iguaçu: a experiência do Projeto FOPEA",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2026.v21.21623",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Inteligência Artificial e suas potencialidades no ensino de botânica: avaliação de aplicativos para a identificação de espécies vegetais",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2025.v20.21470",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    },
+    {
+      "titulo": "Educação Ambiental em práticas pedagógicas com plantas alimentícias não convencionais: o que revelam os periódicos especializados?",
+      "tipo": "livro_capitulo_guia",
+      "periodico": "Revista Brasileira de Educação Ambiental (RevBEA)",
+      "ano": 2025,
+      "link": "https://doi.org/10.34024/revbea.2025.v20.21594",
+      "dossie": "v. 20 n. 8 (2025): Dossiê: Educação ambiental no entorno do Parque Nacional do Iguaçu"
+    }
+  ]
+}

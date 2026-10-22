@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_links",
+  "info": {
+    "displayName": "Link",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": { "type": "string", "required": true },
+    "url": { "type": "string" }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_secao_textos",
+  "info": {
+    "displayName": "Seção de Texto",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": { "type": "string", "required": true },
+    "texto": { "type": "richtext" },
+    "imagem": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "legenda": { "type": "string" }
+  }
+}

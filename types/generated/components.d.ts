@@ -27,11 +27,39 @@ export interface SharedEstatisticas extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedLink extends Struct.ComponentSchema {
+  collectionName: 'components_shared_links';
+  info: {
+    displayName: 'Link';
+    icon: 'link';
+  };
+  attributes: {
+    titulo: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface SharedSecaoTexto extends Struct.ComponentSchema {
+  collectionName: 'components_shared_secao_textos';
+  info: {
+    displayName: 'Se\u00E7\u00E3o de Texto';
+    icon: 'file';
+  };
+  attributes: {
+    imagem: Schema.Attribute.Media<'images'>;
+    legenda: Schema.Attribute.String;
+    texto: Schema.Attribute.RichText;
+    titulo: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
       'shared.elemento-marca': SharedElementoMarca;
       'shared.estatisticas': SharedEstatisticas;
+      'shared.link': SharedLink;
+      'shared.secao-texto': SharedSecaoTexto;
     }
   }
 }

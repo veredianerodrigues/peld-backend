@@ -14,6 +14,7 @@
     "corpo": { "type": "blocks" },
     "imagem": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
     "data": { "type": "date", "required": true },
-    "destaque": { "type": "boolean", "default": false }
+    "destaque": { "type": "boolean", "default": false },
+    "fontes": { "type": "component", "repeatable": true, "component": "shared.link" }
   }
 }

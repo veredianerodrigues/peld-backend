@@ -715,6 +715,7 @@ export interface ApiNoticiaNoticia extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     data: Schema.Attribute.Date & Schema.Attribute.Required;
     destaque: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    fontes: Schema.Attribute.Component<'shared.link', true>;
     imagem: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -746,6 +747,9 @@ export interface ApiPesquisaPagePesquisaPage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    diagrama: Schema.Attribute.Media<'images'>;
+    diagrama_legenda: Schema.Attribute.String;
+    infraestrutura: Schema.Attribute.Component<'shared.secao-texto', true>;
     introducao: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
