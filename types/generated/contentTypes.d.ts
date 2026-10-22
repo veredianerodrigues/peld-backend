@@ -469,6 +469,7 @@ export interface ApiConfiguracaoGlobalConfiguracaoGlobal
       Schema.Attribute.Private;
     logo: Schema.Attribute.Media<'images'>;
     publishedAt: Schema.Attribute.DateTime;
+    redes_sociais: Schema.Attribute.Component<'shared.rede-social', true>;
     texto_footer: Schema.Attribute.Text & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -862,6 +863,7 @@ export interface ApiSobrePageSobrePage extends Struct.SingleTypeSchema {
       'api::sobre-page.sobre-page'
     > &
       Schema.Attribute.Private;
+    marca: Schema.Attribute.Component<'shared.secao-texto', true>;
     o_que_e_peld: Schema.Attribute.RichText;
     parque_nacional: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;

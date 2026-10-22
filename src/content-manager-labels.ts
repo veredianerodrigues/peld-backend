@@ -28,8 +28,9 @@ const COMMON: Record<string, FieldLabel> = {
 const BY_UID: Record<string, Record<string, FieldLabel>> = {
   'api::configuracao-global.configuracao-global': {
     texto_footer: 'Texto do rodapé',
-    footer_localidade: 'Localidade (rodapé)',
-    footer_email: 'E-mail (rodapé)',
+    footer_localidade: { label: 'Endereço / localidade', description: 'Aparece no rodapé e na página de Contato.' },
+    footer_email: { label: 'E-mail de contato', description: 'Aparece no rodapé e na página de Contato.' },
+    redes_sociais: { label: 'Redes sociais', description: 'Aparecem no rodapé e na página de Contato.' },
   },
   'api::contato-page.contato-page': {},
   'api::eixo.eixo': {
@@ -95,10 +96,16 @@ const BY_UID: Record<string, Record<string, FieldLabel>> = {
     o_que_e_peld: 'O que é o PELD',
     parque_nacional: 'O Parque Nacional do Iguaçu',
     historia_projeto: 'História do projeto',
-    elementos_marca: 'Elementos da marca',
+    marca: { label: 'Marca e elementos da marca', description: 'Uma seção por tópico, ex.: Inspiração, Música, Memória, Logo do Projeto.' },
+    elementos_marca: { label: 'Elementos da marca (cartões)', description: 'Opcional. Cartões com ícone abaixo das seções da marca.' },
     estatisticas: 'Estatísticas da equipe',
   },
   'shared.elemento-marca': {},
+  'shared.rede-social': {
+    rede: 'Rede',
+    url: { label: 'Link', description: 'Endereço completo do perfil, ex.: https://instagram.com/peld.iguacu' },
+    usuario: { label: 'Nome exibido', description: 'Opcional, ex.: @peld.iguacu. Se vazio, mostra o nome da rede.' },
+  },
   'shared.link': {
     titulo: 'Texto',
     url: { label: 'Link', description: 'Endereço completo, começando com https://' },

@@ -7,11 +7,31 @@
     "displayName": "Configuração Global",
     "description": "Header/footer compartilhado em todas as páginas"
   },
-  "options": { "draftAndPublish": false },
+  "options": {
+    "draftAndPublish": false
+  },
   "attributes": {
-    "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
-    "texto_footer": { "type": "text", "required": true },
-    "footer_localidade": { "type": "text" },
-    "footer_email": { "type": "email" }
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "texto_footer": {
+      "type": "text",
+      "required": true
+    },
+    "footer_localidade": {
+      "type": "text"
+    },
+    "footer_email": {
+      "type": "email"
+    },
+    "redes_sociais": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.rede-social"
+    }
   }
 }

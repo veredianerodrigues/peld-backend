@@ -6,11 +6,19 @@
     "pluralName": "sobre-pages",
     "displayName": "Página Sobre"
   },
-  "options": { "draftAndPublish": true },
+  "options": {
+    "draftAndPublish": true
+  },
   "attributes": {
-    "o_que_e_peld": { "type": "richtext" },
-    "parque_nacional": { "type": "richtext" },
-    "historia_projeto": { "type": "richtext" },
+    "o_que_e_peld": {
+      "type": "richtext"
+    },
+    "parque_nacional": {
+      "type": "richtext"
+    },
+    "historia_projeto": {
+      "type": "richtext"
+    },
     "elementos_marca": {
       "type": "component",
       "component": "shared.elemento-marca",
@@ -20,6 +28,11 @@
       "type": "component",
       "component": "shared.estatisticas",
       "repeatable": false
+    },
+    "marca": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.secao-texto"
     }
   }
 }

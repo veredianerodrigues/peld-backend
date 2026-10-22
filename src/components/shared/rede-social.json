@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_rede_socials",
+  "info": {
+    "displayName": "Rede Social",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "rede": {
+      "type": "enumeration",
+      "enum": ["instagram", "facebook", "youtube", "x", "tiktok", "whatsapp", "linkedin", "site"],
+      "required": true
+    },
+    "url": { "type": "string", "required": true },
+    "usuario": { "type": "string" }
+  }
+}

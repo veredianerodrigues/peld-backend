@@ -39,6 +39,31 @@ export interface SharedLink extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedRedeSocial extends Struct.ComponentSchema {
+  collectionName: 'components_shared_rede_socials';
+  info: {
+    displayName: 'Rede Social';
+    icon: 'earth';
+  };
+  attributes: {
+    rede: Schema.Attribute.Enumeration<
+      [
+        'instagram',
+        'facebook',
+        'youtube',
+        'x',
+        'tiktok',
+        'whatsapp',
+        'linkedin',
+        'site',
+      ]
+    > &
+      Schema.Attribute.Required;
+    url: Schema.Attribute.String & Schema.Attribute.Required;
+    usuario: Schema.Attribute.String;
+  };
+}
+
 export interface SharedSecaoTexto extends Struct.ComponentSchema {
   collectionName: 'components_shared_secao_textos';
   info: {
@@ -59,6 +84,7 @@ declare module '@strapi/strapi' {
       'shared.elemento-marca': SharedElementoMarca;
       'shared.estatisticas': SharedEstatisticas;
       'shared.link': SharedLink;
+      'shared.rede-social': SharedRedeSocial;
       'shared.secao-texto': SharedSecaoTexto;
     }
   }
