@@ -9,8 +9,17 @@
   "options": { "draftAndPublish": true },
   "attributes": {
     "titulo": { "type": "string", "required": true },
-    "autores": { "type": "string" },
+    "tipo": {
+      "type": "enumeration",
+      "enum": ["artigo_cientifico", "livro_capitulo_guia"],
+      "default": "artigo_cientifico",
+      "required": true
+    },
+    "periodico": { "type": "string" },
     "ano": { "type": "integer" },
+    "link": { "type": "string" },
+    "dossie": { "type": "string" },
+    "autores": { "type": "string" },
     "arquivo": { "type": "media", "multiple": false, "allowedTypes": ["files"] },
     "resumo": { "type": "text" },
     "eixo": { "type": "relation", "relation": "manyToOne", "target": "api::eixo.eixo" }

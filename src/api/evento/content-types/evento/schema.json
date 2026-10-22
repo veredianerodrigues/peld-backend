@@ -10,7 +10,9 @@
   "attributes": {
     "titulo": { "type": "string", "required": true },
     "data": { "type": "date", "required": true },
+    "data_fim": { "type": "date" },
     "descricao": { "type": "text" },
-    "local": { "type": "string" }
+    "local": { "type": "string" },
+    "imagem": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
   }
 }

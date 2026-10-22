@@ -479,7 +479,7 @@ export interface ApiConfiguracaoGlobalConfiguracaoGlobal
 export interface ApiContatoPageContatoPage extends Struct.SingleTypeSchema {
   collectionName: 'contato_pages';
   info: {
-    displayName: 'Contato Page';
+    displayName: 'P\u00E1gina de Contato';
     pluralName: 'contato-pages';
     singularName: 'contato-page';
   };
@@ -553,7 +553,9 @@ export interface ApiEventoEvento extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     data: Schema.Attribute.Date & Schema.Attribute.Required;
+    data_fim: Schema.Attribute.Date;
     descricao: Schema.Attribute.Text;
+    imagem: Schema.Attribute.Media<'images'>;
     local: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -572,7 +574,7 @@ export interface ApiEventoEvento extends Struct.CollectionTypeSchema {
 export interface ApiFopeaPageFopeaPage extends Struct.SingleTypeSchema {
   collectionName: 'fopea_pages';
   info: {
-    displayName: 'FOPEA Page';
+    displayName: 'P\u00E1gina FOPEA';
     pluralName: 'fopea-pages';
     singularName: 'fopea-page';
   };
@@ -604,7 +606,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   collectionName: 'home_pages';
   info: {
     description: 'Conte\u00FAdo do hero da Home';
-    displayName: 'Home Page';
+    displayName: 'P\u00E1gina Inicial';
     pluralName: 'home-pages';
     singularName: 'home-page';
   };
@@ -733,7 +735,7 @@ export interface ApiNoticiaNoticia extends Struct.CollectionTypeSchema {
 export interface ApiPesquisaPagePesquisaPage extends Struct.SingleTypeSchema {
   collectionName: 'pesquisa_pages';
   info: {
-    displayName: 'Pesquisa Page';
+    displayName: 'P\u00E1gina de Pesquisa';
     pluralName: 'pesquisa-pages';
     singularName: 'pesquisa-page';
   };
@@ -775,16 +777,58 @@ export interface ApiPublicacaoPublicacao extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    dossie: Schema.Attribute.String;
     eixo: Schema.Attribute.Relation<'manyToOne', 'api::eixo.eixo'>;
+    link: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::publicacao.publicacao'
     > &
       Schema.Attribute.Private;
+    periodico: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     resumo: Schema.Attribute.Text;
+    tipo: Schema.Attribute.Enumeration<
+      ['artigo_cientifico', 'livro_capitulo_guia']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'artigo_cientifico'>;
     titulo: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPublicacoesPagePublicacoesPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'publicacoes_pages';
+  info: {
+    displayName: 'P\u00E1gina de Publica\u00E7\u00F5es';
+    pluralName: 'publicacoes-pages';
+    singularName: 'publicacoes-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ebook_arquivo: Schema.Attribute.Media<'files'>;
+    ebook_capa: Schema.Attribute.Media<'images'>;
+    ebook_descricao: Schema.Attribute.Text;
+    ebook_link: Schema.Attribute.String;
+    ebook_titulo: Schema.Attribute.String;
+    introducao: Schema.Attribute.RichText;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::publicacoes-page.publicacoes-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -794,7 +838,7 @@ export interface ApiPublicacaoPublicacao extends Struct.CollectionTypeSchema {
 export interface ApiSobrePageSobrePage extends Struct.SingleTypeSchema {
   collectionName: 'sobre_pages';
   info: {
-    displayName: 'Sobre Page';
+    displayName: 'P\u00E1gina Sobre';
     pluralName: 'sobre-pages';
     singularName: 'sobre-page';
   };
@@ -1345,6 +1389,7 @@ declare module '@strapi/strapi' {
       'api::noticia.noticia': ApiNoticiaNoticia;
       'api::pesquisa-page.pesquisa-page': ApiPesquisaPagePesquisaPage;
       'api::publicacao.publicacao': ApiPublicacaoPublicacao;
+      'api::publicacoes-page.publicacoes-page': ApiPublicacoesPagePublicacoesPage;
       'api::sobre-page.sobre-page': ApiSobrePageSobrePage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

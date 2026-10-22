@@ -4,7 +4,7 @@
   "info": {
     "singularName": "contato-page",
     "pluralName": "contato-pages",
-    "displayName": "Contato Page"
+    "displayName": "Página de Contato"
   },
   "options": { "draftAndPublish": true },
   "attributes": {

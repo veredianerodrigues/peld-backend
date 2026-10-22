@@ -4,7 +4,7 @@
   "info": {
     "singularName": "sobre-page",
     "pluralName": "sobre-pages",
-    "displayName": "Sobre Page"
+    "displayName": "Página Sobre"
   },
   "options": { "draftAndPublish": true },
   "attributes": {

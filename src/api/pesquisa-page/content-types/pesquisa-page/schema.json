@@ -4,7 +4,7 @@
   "info": {
     "singularName": "pesquisa-page",
     "pluralName": "pesquisa-pages",
-    "displayName": "Pesquisa Page"
+    "displayName": "Página de Pesquisa"
   },
   "options": { "draftAndPublish": true },
   "attributes": {

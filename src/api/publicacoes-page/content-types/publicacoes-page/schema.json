@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "publicacoes_pages",
+  "info": {
+    "singularName": "publicacoes-page",
+    "pluralName": "publicacoes-pages",
+    "displayName": "Página de Publicações"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "introducao": { "type": "richtext" },
+    "ebook_titulo": { "type": "string" },
+    "ebook_descricao": { "type": "text" },
+    "ebook_capa": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "ebook_link": { "type": "string" },
+    "ebook_arquivo": { "type": "media", "multiple": false, "allowedTypes": ["files"] }
+  }
+}

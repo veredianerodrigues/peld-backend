@@ -4,7 +4,7 @@
   "info": {
     "singularName": "fopea-page",
     "pluralName": "fopea-pages",
-    "displayName": "FOPEA Page"
+    "displayName": "Página FOPEA"
   },
   "options": { "draftAndPublish": true },
   "attributes": {
