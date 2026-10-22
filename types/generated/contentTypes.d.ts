@@ -840,6 +840,36 @@ export interface ApiPublicacoesPagePublicacoesPage
   };
 }
 
+export interface ApiSecaoApoioSecaoApoio extends Struct.SingleTypeSchema {
+  collectionName: 'secoes_apoio';
+  info: {
+    description: 'Faixa de logos acima do rodap\u00E9 da Home';
+    displayName: 'Se\u00E7\u00E3o Apoio (P\u00E1gina Inicial)';
+    pluralName: 'secoes-apoio';
+    singularName: 'secao-apoio';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    itens: Schema.Attribute.Component<'shared.item-apoio', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::secao-apoio.secao-apoio'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    titulo: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSobrePageSobrePage extends Struct.SingleTypeSchema {
   collectionName: 'sobre_pages';
   info: {
@@ -1396,6 +1426,7 @@ declare module '@strapi/strapi' {
       'api::pesquisa-page.pesquisa-page': ApiPesquisaPagePesquisaPage;
       'api::publicacao.publicacao': ApiPublicacaoPublicacao;
       'api::publicacoes-page.publicacoes-page': ApiPublicacoesPagePublicacoesPage;
+      'api::secao-apoio.secao-apoio': ApiSecaoApoioSecaoApoio;
       'api::sobre-page.sobre-page': ApiSobrePageSobrePage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

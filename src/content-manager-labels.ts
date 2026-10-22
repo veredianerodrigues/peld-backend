@@ -92,6 +92,10 @@ const BY_UID: Record<string, Record<string, FieldLabel>> = {
     arquivo: { label: 'Arquivo (PDF)', description: 'Usado quando não houver link.' },
     eixo: 'Eixo de atuação',
   },
+  'api::secao-apoio.secao-apoio': {
+    titulo: { label: 'Título da seção', description: 'Ex.: Apoio. Aparece acima dos logos.' },
+    itens: { label: 'Itens', description: 'Arraste para mudar a ordem. Sem itens, a seção não aparece no site.' },
+  },
   'api::sobre-page.sobre-page': {
     o_que_e_peld: 'O que é o PELD',
     parque_nacional: 'O Parque Nacional do Iguaçu',
@@ -101,6 +105,10 @@ const BY_UID: Record<string, Record<string, FieldLabel>> = {
     estatisticas: 'Estatísticas da equipe',
   },
   'shared.elemento-marca': {},
+  'shared.item-apoio': {
+    nome: { label: 'Nome', description: 'Aparece no lugar do logo quando não houver imagem.' },
+    link: { label: 'Link', description: 'Opcional. Endereço completo, começando com https://' },
+  },
   'shared.rede-social': {
     rede: 'Rede',
     url: { label: 'Link', description: 'Endereço completo do perfil, ex.: https://instagram.com/peld.iguacu' },

@@ -1,0 +1,15 @@
+{
+  "kind": "singleType",
+  "collectionName": "secoes_apoio",
+  "info": {
+    "singularName": "secao-apoio",
+    "pluralName": "secoes-apoio",
+    "displayName": "Seção Apoio (Página Inicial)",
+    "description": "Faixa de logos acima do rodapé da Home"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "titulo": { "type": "string", "required": true },
+    "itens": { "type": "component", "repeatable": true, "component": "shared.item-apoio" }
+  }
+}

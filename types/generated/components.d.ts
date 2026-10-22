@@ -27,6 +27,19 @@ export interface SharedEstatisticas extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedItemApoio extends Struct.ComponentSchema {
+  collectionName: 'components_shared_item_apoios';
+  info: {
+    displayName: 'Item de Apoio';
+    icon: 'heart';
+  };
+  attributes: {
+    link: Schema.Attribute.String;
+    logo: Schema.Attribute.Media<'images'>;
+    nome: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedLink extends Struct.ComponentSchema {
   collectionName: 'components_shared_links';
   info: {
@@ -83,6 +96,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'shared.elemento-marca': SharedElementoMarca;
       'shared.estatisticas': SharedEstatisticas;
+      'shared.item-apoio': SharedItemApoio;
       'shared.link': SharedLink;
       'shared.rede-social': SharedRedeSocial;
       'shared.secao-texto': SharedSecaoTexto;

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_item_apoios",
+  "info": {
+    "displayName": "Item de Apoio",
+    "icon": "heart"
+  },
+  "options": {},
+  "attributes": {
+    "nome": { "type": "string", "required": true },
+    "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "link": { "type": "string" }
+  }
+}
