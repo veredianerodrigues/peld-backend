@@ -143,5 +143,23 @@ export default {
       subtree: true,
       characterData: true,
     });
+
+    // SupportCard (Settings > Overview) é renderizado incondicionalmente pelo ApplicationInfoPage,
+    // sem flag/permissão. Âncora: o tile de GitHub issues, exclusivo do card; sobe até o primeiro
+    // ancestral com <h3> ("Support"), que é a raiz do card. Checagem agrupada por frame.
+    let scheduled = false;
+    const hideSupportCard = () => {
+      scheduled = false;
+      const tile = document.querySelector<HTMLElement>('a[href="https://github.com/strapi/strapi/issues"]');
+      let card = tile?.parentElement ?? null;
+      while (card && !card.querySelector(':scope h3')) card = card.parentElement;
+      if (card && card.style.display !== 'none') card.style.display = 'none';
+    };
+    new MutationObserver(() => {
+      if (!scheduled) {
+        scheduled = true;
+        requestAnimationFrame(hideSupportCard);
+      }
+    }).observe(document.body, { childList: true, subtree: true });
   },
 };
